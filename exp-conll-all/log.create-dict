@@ -1,0 +1,130 @@
+read config from config.txt
+Loaded config file successfully.
+is_test 0
+is_train 1
+device-x cpu
+device cuda:1
+dict_dir ./
+word_freq_cutoff 1
+model_dir ./
+ext_word_emb_full_path /home/liying/parser/data/giga.bin
+ext_word_dict_full_path /home/liying/parser/data/extwords.txt
+inst_num_max -1
+max_bucket_num 80
+sent_num_one_batch 200
+word_num_one_batch 5000
+is_shared_lstm 1
+is_meta 1
+is_diff_loss 1
+is_meta_weight 1
+is_adversary 1
+is_multi 0
+is_charlstm 1
+model_eval_num 0
+data_dir /home/liying/parser/data/ZX
+train_files /home/liying/parser/data/BC/train-bc.conll:/home/liying/parser/data/ZX/train-zx.conll
+dev_files /home/liying/parser/data/ZX/dev-zx.conll
+test_files /home/liying/parser/data/ZX/test-zx.conll
+unlabel_train_files /home/liying/parser/data/Unlabeled-pos/zx-unlabel-pos.conll
+is_dictionary_exist 0
+train_max_eval_num 1000
+save_model_after_eval_num 1
+train_stop_after_eval_num_no_improve 100
+eval_every_update_step_num 184
+lstm_layer_num 3
+word_emb_dim 100
+tag_emb_dim 100
+domain_emb_dim 12
+domain_size 2
+emb_dropout_ratio 0.33
+lstm_hidden_dim 400
+lstm_input_dropout_ratio 0.33
+lstm_hidden_dropout_ratio_for_next_timestamp 0.33
+mlp_output_dim_arc 500
+mlp_output_dim_rel 100
+mlp_input_dropout_ratio 0.33
+mlp_output_dropout_ratio 0.33
+learning_rate 2e-3
+meta_learning_rate 1e-4
+meta_loss 0.5
+decay .75
+decay_steps 5000
+beta_1 .7
+beta_2 .95
+epsilon 1e-12
+clip 5.0
+adversary_lambda_loss 0.001
+diff_bate_loss 0.01
+random_seeds =  [1679194718, 828011258, 870104586, 510547421]
+self._file_name_short _parser_data_BC_train-bc.conll
+self._domain_id 1
+Reading _parser_data_BC_train-bc.conll done: 16339 instances
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  0 1435 10 8 0
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  1 1886 12 10 8
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  2 2007 14 11 18
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  3 1054 15 6 29
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  4 1008 16 6 35
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  5 1017 17 6 41
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  6 1082 18 6 47
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  7 1050 19 6 53
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  8 1032 20 6 59
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  9 1003 21 6 65
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  10 762 22 4 71
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  11 779 23 4 75
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  12 719 24 4 79
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  13 677 25 4 83
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  14 828 31 5 87
+_parser_data_BC_train-bc.conll can provide 92 batches in total with 15 buckets
+self._file_name_short _parser_data_ZX_train-zx.conll
+self._domain_id 2
+Reading _parser_data_ZX_train-zx.conll done: 1645 instances
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  0 635 22 4 0
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  1 353 29 2 4
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  2 290 36 2 6
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  3 232 43 2 8
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  4 135 54 1 10
+_parser_data_ZX_train-zx.conll can provide 11 batches in total with 5 buckets
+self._file_name_short beled-pos_zx-unlabel-pos.conll
+self._domain_id 2
+Reading beled-pos_zx-unlabel-pos.conll done: 11210 instances
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  0 1092 10 6 0
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  1 825 14 5 6
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  2 720 17 4 11
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  3 700 20 4 15
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  4 499 22 3 19
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  5 514 24 3 22
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  6 546 26 3 25
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  7 551 28 3 28
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  8 455 30 3 31
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  9 467 32 3 34
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  10 463 34 3 37
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  11 437 36 3 40
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  12 420 38 3 43
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  13 376 40 3 46
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  14 355 42 3 49
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  15 318 44 3 52
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  16 306 46 3 55
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  17 273 48 3 58
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  18 238 50 2 61
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  19 297 53 3 63
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  20 212 55 2 66
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  21 237 58 3 68
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  22 233 62 3 71
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  23 191 66 3 74
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  24 154 70 2 77
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  25 166 77 3 79
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  26 94 85 2 82
+i, inst_num, max_len, batch_num_to_provide, batch_num_total =  27 71 101 1 84
+beled-pos_zx-unlabel-pos.conll can provide 85 batches in total with 28 buckets
+create dict...
+max_char: 32
+max_char: 7
+	Saved 30913 vocab into ./dict/words
+
+	Saved 4113 vocab into ./dict/chars
+
+	Saved 32 vocab into ./dict/postags
+
+	Saved 21 vocab into ./dict/labels
+
+create dict done
